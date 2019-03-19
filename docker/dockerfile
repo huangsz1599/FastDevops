@@ -1,8 +1,8 @@
-FROM python3-centos6:latest
+FROM python353-centos7:latest
 MAINTAINER yunding-sa <tech@go.cc>
 
-ARG PROJECT_NAME="cmdb"
-ARG SUPERVISOR_CONFIG="cmdb.conf"
+ARG PROJECT_NAME="FastDevops"
+ARG SUPERVISOR_CONFIG="FastDevops.conf"
 
 #COPY ./${PROJECT_NAME} /data/wwwroot/${PROJECT_NAME}
 COPY ./${SUPERVISOR_CONFIG} /etc/supervisor/conf.d/${SUPERVISOR_CONFIG}
