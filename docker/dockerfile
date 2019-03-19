@@ -1,0 +1,11 @@
+FROM python3-centos6:latest
+MAINTAINER yunding-sa <tech@go.cc>
+
+ARG PROJECT_NAME="cmdb"
+ARG SUPERVISOR_CONFIG="cmdb.conf"
+
+#COPY ./${PROJECT_NAME} /data/wwwroot/${PROJECT_NAME}
+COPY ./${SUPERVISOR_CONFIG} /etc/supervisor/conf.d/${SUPERVISOR_CONFIG}
+COPY ./requirements /requirements
+RUN pip install -r /requirements
+EXPOSE 9000
