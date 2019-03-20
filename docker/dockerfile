@@ -7,5 +7,5 @@ ARG SUPERVISOR_CONFIG="FastDevops.conf"
 #COPY ./${PROJECT_NAME} /data/wwwroot/${PROJECT_NAME}
 COPY ./${SUPERVISOR_CONFIG} /etc/supervisor/conf.d/${SUPERVISOR_CONFIG}
 COPY ./requirements /requirements
-RUN pip install -r /requirements
+RUN pip3 install -r /requirements
 EXPOSE 9000
