@@ -9,3 +9,4 @@ COPY ./${SUPERVISOR_CONFIG} /etc/supervisor/conf.d/${SUPERVISOR_CONFIG}
 COPY ./requirements /requirements
 RUN pip install -r /requirements
 EXPOSE 9000
+ENTRYPOINT ['python36','/data/wwwroot/FastDevops/manage.py','runserver','0.0.0.0:9000']
