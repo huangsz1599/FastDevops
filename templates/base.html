@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        {% include '_head_css_js.html' %}
+    </head>
+<body class="fixed-left">
+    <!-- Begin page -->
+    <div id="wrapper">
+        {% include '_top_side_bar.html' %}
+        {% include '_left_side_bar.html' %}
+        <div class="content-page">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+		    {% include '_message.html' %}
+                    </div>
+                    {% block content %}{% endblock %}
+                </div> 
+		{% include '_footer.html' %}
+            </div> 
+        </div>
+        {% block Modal %}{% endblock %}
+    </div>
+        {% include '_foot_js.html' %}
+</body>
+</html>
