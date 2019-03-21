@@ -3,7 +3,7 @@ MAINTAINER yunding-sa <tech@go.cc>
 
 ARG PROJECT_NAME="FastDevops"
 ARG SUPERVISOR_CONFIG="FastDevops.conf"
-
+RUN yum install -y mysql-devel
 #COPY ./${PROJECT_NAME} /data/wwwroot/${PROJECT_NAME}
 COPY ./${SUPERVISOR_CONFIG} /etc/supervisor/conf.d/${SUPERVISOR_CONFIG}
 COPY ./requirements /requirements
