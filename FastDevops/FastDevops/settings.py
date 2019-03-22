@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'fastdevops',
         'USER': 'fast',
         'PASSWORD': 'gao7gao8!@#',
-        'HOST': '111.230.232.151',
+        'HOST': '118.25.11.209',
         'PORT': '3306',
     }
 }
