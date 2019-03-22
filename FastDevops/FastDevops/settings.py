@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # Set global static file dir
 ]
-LOGIN_URL = '/users/login/'
+#LOGIN_URL = '/users/login/'
 
 # send mail
 EMAIL_HOST = 'smtp.qq.com'
